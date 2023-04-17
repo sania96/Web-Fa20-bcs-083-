@@ -1,0 +1,150 @@
+.nav-item{
+    padding-left: 20px;
+   
+   }
+
+ .fa-facebook{
+
+color:rgba(250, 250, 251, 0.94);
+font-size: 20px;
+
+
+ } 
+ .fa-instagram{
+    color:rgba(250, 250, 251, 0.94);
+font-size: 20px;
+ }
+ .fa-twitter{
+    color:rgba(250, 250, 251, 0.94);
+font-size: 20px;
+ }
+
+ .navbar{
+
+    background-color: black;
+ }
+ .navbar-nav .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+  div.carousel-item {
+    max-height: 500px;
+  }
+.left{
+
+
+width:25%;
+float:left;
+margin-top: 60px;
+margin-bottom: 60px;
+margin-left: 130px;
+margin-right: 40px;
+  }
+.center{
+
+    width:60%;
+    float:left;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+
+   body {
+        font-family: Arial, sans-serif;
+      }
+      
+      .form-container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        background-color: #ce153f;
+        color: white;
+      }
+      
+      h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input,
+      select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      
+      input:focus,
+      select:focus {
+        border-color: #007bff;
+        outline: none;
+      }
+      
+      .checkbox-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      
+      .checkbox-group label {
+        margin-right: 10px;
+      }
+      
+      button[type="submit"] {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border: white;
+        border-radius: 4px;
+        background-color:#ce153f;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      
+      button[type="submit"]:hover {
+        background-color:#ce153f;
+      }
+         
+      .card3{
+        float:left;
+        width:15%;
+        margin:10px;
+        border: 2px solid rgb(2, 21, 17);
+       padding:20px;
+       }
+
+       #toastContainer {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 250px;
+        background-color: #333;
+        color: #fff;
+        border-radius: 5px;
+        padding: 10px;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s, visibility 0.3s;
+      }
+      
+      #toastContainer.show {
+        opacity: 1;
+        visibility: visible;
+      }
+      
+      #toastButton {
+        background-color: #fff;
+        color: #333;
+        border: none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        margin-top: 10px;
+      }
+      
