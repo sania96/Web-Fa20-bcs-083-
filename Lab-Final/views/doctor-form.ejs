@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Doctor Form</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>Doctor Form</h1>
+ 
+<form class="doctorform" method="POST" <% if (doctor) { %>action="/doctors/<%= doctor._id %>?_method=PUT"<% } else { %>action="/doctors"<% } %>>
+  <label for="name">Title:</label>
+  <input type="text" id="name" name="name" value="<%= doctor ? doctor.name : '' %>" required><br>
+  <label for="speciality">speciality:</label>
+  <textarea id="speciality" name="speciality" required><%= doctor ? doctor.speciality : '' %></textarea><br>
+  <label for="hospital">hospital:</label>
+  <textarea id="hospital" name="hospital" required><%= doctor ? doctor.hospital : '' %></textarea><br>
+  <button type="submit">Save</button>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Doctor App</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>Doctor App</h1>
+  <ul>
+    <% doctors.forEach((doctor) => { %>
+      <li>
+        <h3><%= doctor.name %></h3>
+        <p><%= doctor.speciality %></p>
+        <p><%= doctor.hospital %></p>
+        <a href="/doctors/<%= doctor._id %>/edit" class="edit-link">Edit</a>
+        <form method="POST" action="/doctors/<%= doctor._id %>?_method=DELETE" style="display: inline;">
+          <button type="submit">Delete</button>
+        </form>
+      </li>
+    <% }) %>
+  </ul>
+  <a class="add-link" href="/doctors/new">Add New Doctor</a>
+
+</body>
+</html>
