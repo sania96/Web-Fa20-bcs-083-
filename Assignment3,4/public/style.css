@@ -1,0 +1,126 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    color: #333;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    color: #333;
+    margin: 0;
+  }
+  
+  p {
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  a:hover {
+    transform: scale(1.1);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  button[type="submit"] {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    transform: scale(1.1);
+  }
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: vertical;
+  }
+  
+  button[type="submit"] {
+    margin-top: 10px;
+  }
+  
+ /* styles.css */
+/* styles.css */
+
+.add-link {
+    display: inline-block;
+    text-align: center;
+    margin: 70px;
+   margin-left: 500px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  
+  a.add-link:hover {
+    background-color: #333;
+  }
+  /* styles.css */
+
+/* ... (existing styles) */
+
+a.edit-link {
+    background-color: darkblue;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  a.edit-link:hover {
+    background-color: white;
+    color: darkblue;
+    
+  }
+  
