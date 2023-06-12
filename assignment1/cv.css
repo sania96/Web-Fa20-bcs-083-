@@ -1,0 +1,56 @@
+
+.main{
+width:50%;
+margin-top:70px;
+margin-bottom: 20px;
+margin-left: 20%;
+border: 4px solid  rgb(21, 109, 94) ;;
+
+float:left;
+padding:10px;
+
+}
+.two{
+float:right;
+width: 48%;
+margin: 10px;
+}
+.one{
+ float:left;
+ width: 45%;
+ margin: 10px;
+ background-color: rgb(180, 232, 223);
+ 
+}
+.mypic{
+    
+    float:right;
+    padding-left: 30%;
+    margin: 5%;
+}
+img{
+  
+   background-color: white;
+   border: 2px solid rgb(114, 180, 169) ;
+    border-radius: 100%;
+    padding:10px; 
+    width: 180px;
+}
+h2{ width:300px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 3px;
+    color: white;
+    background-color: rgb(112, 199, 185);
+    clear:right
+ 
+}
+h3{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgb(195, 237, 230); 
+
+}
+h1{
+    color: rgb(21, 109, 94) ;
+}

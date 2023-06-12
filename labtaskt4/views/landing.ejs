@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Recipe App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <%- include('navbar') %>
+    <% if (typeof message !== 'undefined' && message) { %>
+        <script>
+            alert("<%= message %>");
+          </script>
+      <% } %>
+    <div class="container">
+        <h1 class="centered">Foodie Pallette</h1>
+        <p class="landing-paragraph">Welcome to Foodie Pallette. Explore a world of culinary delights and discover a wide range of recipes to satisfy your taste buds. From traditional classics to innovative creations, our collection offers something for every palate. </p>
+        <a href="/menu" class="btn btn-primary learn-more-button">Learn More >></a>
+        <div class="row justify-content-center recipe-cards">
+            <div class="col-md-6 col-lg-4">
+                <div class="recipe-card">
+                    <div id="carousel-desi" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/desi.jpg" class="card-img-top" alt="Desi Recipe 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/desi2.jpg" class="card-img-top" alt="Desi Recipe 2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Desi Cuisine</h5>
+                        <a href="/recipe/desi" class="btn btn-primary view-button">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="recipe-card">
+                    <div id="carousel-continental" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/cont.jpg" class="card-img-top" alt="Continental Recipe 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/cont2.jpg" class="card-img-top" alt="Continental Recipe 2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Continental Cuisine</h5>
+                        <a href="/recipe/continental" class="btn btn-primary view-button">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="recipe-card">
+                    <div id="carousel-italian" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/ital.jpg" class="card-img-top" alt="Italian Recipe 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/ital2.jpg" class="card-img-top" alt="Italian Recipe 2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Italian Cuisine</h5>
+                        <a href="/recipe/italian" class="btn btn-primary view-button">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="recipe-card">
+                    <div id="carousel-chinese" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/chin.jpg" class="card-img-top" alt="Chinese Recipe 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/jap3.jpg" class="card-img-top" alt="Chinese Recipe 2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Chinese Cuisine</h5>
+                        <a href="/recipe/chinese" class="btn btn-primary view-button">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="recipe-card">
+                    <div id="carousel-arabic" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/arab.jpg" class="card-img-top" alt="Arabic Recipe 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/arab2.jpg" class="card-img-top" alt="Arabic Recipe 2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Arabic Cuisine</h5>
+                        <a href="/recipe/arabic" class="btn btn-primary view-button">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="recipe-card">
+                    <div id="carousel-japanese" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/jap.jpg" class="card-img-top" alt="Japanese Recipe 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/jap2.jpg" class="card-img-top" alt="Japanese Recipe 2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Japanese Cuisine</h5>
+                        <a href="/recipe/japanese" class="btn btn-primary view-button">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- New section with image carousel and paragraph -->
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div id="carousel-menu" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/chin.jpg" class="img-fluid" alt="Menu 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/desi.jpg" class="img-fluid" alt="Menu 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/jap.jpg" class="img-fluid" alt="Menu 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h2 class="menu-heading">Today's Menu</h2>
+            <p class="menu-paragraph">Check out our delicious dishes prepared with fresh ingredients. Choose from a variety of cuisines and flavors. Indulge in the mouthwatering flavors that will tantalize your taste buds. Experience the perfect blend of traditional recipes and innovative culinary creations. Savor each bite as our skilled chefs bring out the best in every dish. Whether you're a fan of spicy, savory, or sweet, we have something to satisfy every craving. Join us for an unforgettable dining experience that will leave you craving for more. </p>
+            <a href="/menu" class="btn btn-primary menu-button">Menu</a>
+        </div>
+    </div>
+    
+   
+    <%- include('footer') %>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
